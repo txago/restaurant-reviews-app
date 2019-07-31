@@ -140,13 +140,14 @@ createReviewHTML = (review) => {
   comments.className = 'review-comment';
   li.appendChild(comments);
 
+  li.setAttribute('role', 'listitem');
   return li;
 }
 
 /**
  * Add restaurant name to the breadcrumb navigation menu
  */
-fillBreadcrumb = (restaurant=self.restaurant) => {
+fillBreadcrumb = (restaurant = self.restaurant) => {
   const breadcrumb = document.getElementById('breadcrumb');
   const li = document.createElement('li');
   li.innerHTML = restaurant.name;

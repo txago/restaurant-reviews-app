@@ -26,7 +26,7 @@
       <div id="map"></div>
     </section>
     <div class="wrapper">
-      <section id="restaurant-container" title="Restaurant Information">
+      <section id="restaurant-container" tabindex="0" title="Restaurant Information">
         <img id="restaurant-img">
         <div class="left-column">
           <h2 id="restaurant-name"></h2>
@@ -37,18 +37,19 @@
           <table id="restaurant-hours"></table>
         </div>
       </section>
-      <section id="reviews-container" title="Restaurant Reviews Comments">
-          <ul id="reviews-list"></ul>
+      <section id="reviews-container" title="Restaurant Reviews">
+        <ul id="reviews-list" role="list" title="List of comments"></ul>
       </section>
 
       <footer id="footer" title="Legal Disclaimer">
-        Copyright (c) 2017 <a href="index.html" title="Restaurant Reviews home page">Restaurant Reviews</a> All Rights Reserved. Restaurant icon by <a href="https://thenounproject.com/kukkik_jung" target="_blank" title="Monkik profile at Noun Project">monkik</a> from the Noun Project.
+        Copyright (c) 2017 <a href="index.html" title="Restaurant Reviews home page">Restaurant Reviews</a> All Rights Reserved. Restaurant icon by <a href="https://thenounproject.com/kukkik_jung" target="_blank" title="Monkik profile at Noun Project">monkik</a>
+        from the Noun Project.
       </footer>
     </div>
   </main>
 
-  <script type="text/javascript" src="js/dbhelper.js"></script>
-  <script type="text/javascript" src="js/restaurant_info.js"></script>
+  <script type="application/javascript" charset="utf-8" src="./js/dbhelper.js"></script>
+  <script type="application/javascript" charset="utf-8" src="./js/restaurant_info.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5WLSsoB8hua6EnAN6eFAwpXwFqQJlcUg&libraries=places&callback=initMap"></script>
 
 </body>

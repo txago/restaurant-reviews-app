@@ -16,10 +16,10 @@ You may **visit it online** [here](https://txago.github.io/restaurant-reviews-ap
 1. Download or clone this repository in your terminal by using `$ git clone git@github.com:txago/restaurant-reviews-app.git`
 
 2. Access the folder and check the **Python version** that is installed in your computer by using the command `$ python -V`. Relax, you don't need to know Python.
-  - If you have **Python 2.x**, spin up the server with `$ python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use).
-  - For **Python 3.x**, you can use `$ python3 -m http.server 8000`.
-  - If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
-  - **For Windows systems**, Python 3.x is installed as python by default. To start a Python 3.x server, you can simply enter python `$ -m http.server 8000`.
+   - If you have **Python 2.x**, spin up the server with `$ python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use).
+   - For **Python 3.x**, you can use `$ python3 -m http.server 8000`.
+   - If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+   - **For Windows systems**, Python 3.x is installed as python by default. To start a Python 3.x server, you can simply enter python `$ -m http.server 8000`.
 
 3. With your server running, access the URL `http://localhost:8000` in your favorite browser.
 

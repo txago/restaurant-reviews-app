@@ -9,21 +9,24 @@
 </head>
 
 <body class="inside">
-  <header>
+  <header title="Restaurant Reviews">
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <a href="index.html" title="Restaurant Reviews home page">
+        <img src="img/restaurant-reviews-logo.svg" class="restaurant-logo" alt="Restaurant Reviews Logo">
+        <h1>Restaurant Reviews</h1>
+      </a>
     </nav>
-    <ul id="breadcrumb">
-      <li><a href="/">Home</a></li>
+    <ul id="breadcrumb" role="navigation">
+      <li><a href="index.html" title="Restaurant Reviews home page">Home</a></li>
     </ul>
   </header>
 
   <main id="maincontent">
-    <section id="map-container">
+    <section id="map-container" title="Restaurant Map">
       <div id="map"></div>
     </section>
     <div class="wrapper">
-      <section id="restaurant-container">
+      <section id="restaurant-container" title="Restaurant Information">
         <img id="restaurant-img">
         <div class="left-column">
           <h2 id="restaurant-name"></h2>
@@ -34,19 +37,19 @@
           <table id="restaurant-hours"></table>
         </div>
       </section>
-      <section id="reviews-container">
+      <section id="reviews-container" title="Restaurant Reviews Comments">
           <ul id="reviews-list"></ul>
       </section>
 
-      <footer id="footer">
-        Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+      <footer id="footer" title="Legal Disclaimer">
+        Copyright (c) 2017 <a href="index.html" title="Restaurant Reviews home page">Restaurant Reviews</a> All Rights Reserved. Restaurant icon by <a href="https://thenounproject.com/kukkik_jung" target="_blank" title="Monkik profile at Noun Project">monkik</a> from the Noun Project.
       </footer>
     </div>
   </main>
 
   <script type="text/javascript" src="js/dbhelper.js"></script>
   <script type="text/javascript" src="js/restaurant_info.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuYmaLhbDnXo-fbEGXs7FHLL_TAtQXu9Q&libraries=places&callback=initMap"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5WLSsoB8hua6EnAN6eFAwpXwFqQJlcUg&libraries=places&callback=initMap"></script>
 
 </body>
 

@@ -73,7 +73,7 @@ fillCuisinesHTML = (cuisines = self.cuisines) => {
 /**
  * Initialize Google map, called from HTML.
  */
- window.initMap = () => {
+window.initMap = () => {
   let loc = {
     lat: 40.722216,
     lng: -73.987501
@@ -146,10 +146,13 @@ createRestaurantHTML = (restaurant) => {
   image.className = 'restaurant-thumb';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   image.alt = 'Photo of ' + restaurant.name + ' restaurant';
+  image.addEventListener('click', respondToClick)
   li.append(image);
 
   const name = document.createElement('h3');
   name.innerHTML = restaurant.name;
+  name.setAttribute('alt', 'View details of ' + restaurant.name);
+  name.addEventListener('click', respondToClick);
   wrapper.append(name);
 
   const neighborhood = document.createElement('span');
@@ -162,14 +165,15 @@ createRestaurantHTML = (restaurant) => {
 
   const more = document.createElement('button');
   more.innerHTML = 'View Details';
-  more.setAttribute('aria-label', 'View details of ' + restaurant.name);
-  more.addEventListener('click', respondToClick)
+  more.setAttribute('alt', 'View details of ' + restaurant.name);
+  more.addEventListener('click', respondToClick);
 
   function respondToClick(event) {
-      window.open(DBHelper.urlForRestaurant(restaurant), '_self');
+    window.open(DBHelper.urlForRestaurant(restaurant), '_self');
   }
   wrapper.append(more);
 
+  li.setAttribute('role', 'listitem');
   li.append(wrapper);
 
   return li;

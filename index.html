@@ -19,35 +19,37 @@
   </header>
 
   <main id="maincontent">
-    <section id="map-container" title="Restaurant Map">
+    <section id="map-container" title="Map of restaurants">
       <div id="map"></div>
     </section>
-    <section title="Restaurants Filters">
+    <section title="Restaurants list">
       <form class="filter-options">
-        <h2>Filters</h2>
-        <label for="neighborhoods-select" style="display:none;">Filter by neighborhood</label>
+        <h2>Filter restaurants</h2>
+        <label for="neighborhoods-select" style="display:none;">Select neighborhood</label>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <label for="cuisines-select" style="display:none;">Filter by cuisine</label>
+        <label for="cuisines-select" style="display:none;">Select cuisine</label>
         <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </form>
-      <ul id="restaurants-list" tabindex="0" title="Restaurants List"></ul>
+      <ul id="restaurants-list" tabindex="0" role="list" title="List of restaurants"></ul>
     </section>
   </main>
 
   <footer id="footer" title="Legal Disclaimer">
-    Copyright (c) 2017 <a href="index.html" title="Restaurant Reviews home page"><strong>Restaurant Reviews</strong></a> All Rights Reserved. Restaurant icon by <a href="https://thenounproject.com/kukkik_jung" target="_blank" title="Monkik profile at Noun Project">monkik</a> from the Noun Project.
+    Copyright (c) 2017 <a href="index.html" title="Restaurant Reviews home page"><strong>Restaurant Reviews</strong></a> All Rights Reserved. Restaurant icon by <a href="https://thenounproject.com/kukkik_jung" target="_blank" title="Monkik profile at Noun Project">monkik</a>
+    from the Noun Project.
   </footer>
 
-  <script type="text/javascript" src="js/dbhelper.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="application/javascript" charset="utf-8" src="./js/dbhelper.js"></script>
+  <script type="application/javascript" charset="utf-8" src="./js/main.js"></script>
+  <script type="application/javascript" charset="utf-8" src="./js/sw_register.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5WLSsoB8hua6EnAN6eFAwpXwFqQJlcUg&libraries=places&callback=initMap"></script>
 
 </body>
 
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
 
 </html>

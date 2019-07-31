@@ -341,6 +341,7 @@ nav .restaurant-logo {
 #restaurant-container {
   flex-basis: 100%;
   background: #fff;
+  align-items: center;
 }
 
 #reviews-container {
@@ -380,6 +381,7 @@ nav .restaurant-logo {
   display: block;
   margin: 0 0 20px;
   order: 1;
+  align-self: center;
 }
 
 #restaurant-address {

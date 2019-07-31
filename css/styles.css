@@ -240,6 +240,7 @@ nav .restaurant-logo {
   margin: 0;
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 #restaurants-list div {
@@ -258,6 +259,7 @@ nav .restaurant-logo {
   line-height: 1.3;
   margin: 0 0 8px;
   flex-basis: 100%;
+  cursor: pointer;
 }
 
 #restaurants-list span {

@@ -374,11 +374,11 @@ nav .restaurant-logo {
   flex-basis: 100%;
 }
 
-#restaurant-img {
+.restaurant-img {
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   order: 1;
 }
 

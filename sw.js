@@ -1,12 +1,23 @@
-var staticCacheName = 'restaurant-static-v1';
+var staticCacheName = 'restaurant-static-v2';
 
 /** Files installation **/
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(staticCacheName).then(function(cache) {
       return cache.addAll([
+        './',
         './index.html',
         './restaurant.html',
+        './restaurant.html?id=1',
+        './restaurant.html?id=2',
+        './restaurant.html?id=3',
+        './restaurant.html?id=4',
+        './restaurant.html?id=5',
+        './restaurant.html?id=6',
+        './restaurant.html?id=7',
+        './restaurant.html?id=8',
+        './restaurant.html?id=9',
+        './restaurant.html?id=10',
         './data/restaurants.json',
         './js/dbhelper.js',
         './js/main.js',
@@ -23,6 +34,7 @@ self.addEventListener('install', function(event) {
         './img/9.jpg',
         './img/10.jpg',
         './img/restaurant-reviews-logo.svg',
+        '//normalize-css.googlecode.com/svn/trunk/normalize.css',
         'https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2'
       ]);
     })

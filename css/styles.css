@@ -99,22 +99,29 @@ nav .restaurant-logo {
 }
 
 #breadcrumb {
-  padding: 14px 20px;
+  padding: 0 20px;
   list-style: none;
   background-color: #e2e2e2;
   margin: 0;
   width: auto;
+  height: 40px;
   color: #616161;
   font-size: 10pt;
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
+  justify-content: left;
+}
+
+#breadcrumb ul {
+  padding: 0;
+  margin: 0;
 }
 
 /* Display list items side by side */
 #breadcrumb li {
   color: #616161;
-  display: inline;
+  display: inline-block;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
